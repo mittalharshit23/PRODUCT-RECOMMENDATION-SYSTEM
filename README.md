@@ -17,13 +17,13 @@ It predicts user preferences and recommends top-N products, similar to Amazon’
 ---
 
 ## 🚀 Features
-✅ Hybrid Recommendation Model (CF + CBF)
-✅ Dynamic Weight Adjustment — automatically balances CF and CBF weights based on user activity and feedback
-✅ Feedback Learning System — users can 👍 like / 👎 dislike products directly in the app
-✅ Explainable Recommendations — every suggestion includes a clear reason (e.g., “Similar to your liked item: Product X”)
-✅ Interactive Streamlit UI — choose user, number of recommendations, view product cards with reasons and feedback buttons
-✅ Real-Time Feedback Logging — all user feedback is saved in /models/feedback.csv for continuous learning
-✅ Undo Functionality — allows users to revert likes/dislikes (session-state based)
+- ✅ Hybrid Recommendation Model (CF + CBF)
+- ✅ Dynamic Weight Adjustment — automatically balances CF and CBF weights based on user activity and feedback
+- ✅ Feedback Learning System — users can 👍 like / 👎 dislike products directly in the app
+- ✅ Explainable Recommendations — every suggestion includes a clear reason (e.g., “Similar to your liked item: Product X”)
+- ✅ Interactive Streamlit UI — choose user, number of recommendations, view product cards with reasons and feedback buttons
+- ✅ Real-Time Feedback Logging — all user feedback is saved in /models/feedback.csv for continuous learning
+- ✅ Undo Functionality — allows users to revert likes/dislikes (session-state based)
 ---
 
 ## 🧠 Model Overview
@@ -41,14 +41,14 @@ User interactions (likes/dislikes) influence future recommendations by adjusting
 
 ---
 
-##🧮 How It Works
+## 🧮 How It Works
 
-1.User selects ID and number of recommendations.
-2.Hybrid model computes CF and CBF scores for unseen products.
-3.System blends both scores with adaptive weights (α_CF, α_CBF).
-4.Explainability module generates textual reasons for each suggestion.
-5.User feedback (👍 / 👎) is stored in feedback.csv.
-6.Weights adjust automatically in subsequent sessions.
+- User selects ID and number of recommendations.
+- Hybrid model computes CF and CBF scores for unseen products.
+- System blends both scores with adaptive weights (α_CF, α_CBF).
+- Explainability module generates textual reasons for each suggestion.
+- User feedback (👍 / 👎) is stored in feedback.csv.
+- Weights adjust automatically in subsequent sessions.
 
 ## 📊 Evaluation Metrics
 | Metric | Description |
@@ -58,16 +58,16 @@ User interactions (likes/dislikes) influence future recommendations by adjusting
 
 ---
 
-##💻 Streamlit UI Highlights
+## 💻 Streamlit UI Highlights
 
-1.Displays product image, title, category, hybrid score, and explanation
-2.Shows Why this recommendation? section
-3.Supports Like / Dislike / Undo buttons with instant UI updates
-4.Feedback instantly logged and stored persistently
-5.Automatically adjusts weights and refreshes recommendations
+- Displays product image, title, category, hybrid score, and explanation
+- Shows Why this recommendation? section
+- Supports Like / Dislike / Undo buttons with instant UI updates
+- Feedback instantly logged and stored persistently
+- Automatically adjusts weights and refreshes recommendations
 ---
 
-##🧩 Future Improvements
+## 🧩 Future Improvements
 
 - 🔁 Real-time model retraining using feedback
 - 📊 Add dashboard for analytics and user trends
